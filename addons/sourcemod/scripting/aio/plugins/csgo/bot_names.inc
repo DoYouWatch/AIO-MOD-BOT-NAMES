@@ -14,8 +14,9 @@
 //***********************************//
 //*************DEFINE****************//
 //***********************************//
-#define TAG_BOT_NAMES_CSGO 	"[AIO BOT NAMES] - "
-#define BOT_NAMES_CSGO		64
+#define TAG_BOT_NAMES_CSGO 				"[AIO BOT NAMES] - "
+#define PLUGIN_VERSION_BOT_NAMES_CSGO	"1.0.0"
+#define BOT_NAMES_CSGO					64
 
 
 //***********************************//
@@ -62,7 +63,7 @@ new C_max_clients									= 0;
 public OnPluginStartBotNamesCsgo()
 {
 	LoadBotNamesCsgo();
-	CreateConVar("aio_bot_names_version", PLUGIN_VERSION, "Version", CVARS);
+	CreateConVar("aio_bot_names_version", PLUGIN_VERSION_BOT_NAMES_CSGO, "Version", CVARS);
 	
 	cvar_active_bot_names_csgo 						= CreateConVar("active_bot_names_csgo",  				"0", 					"Enable/Disable Bot Names", 			DEFAULT_FLAGS, 		true, 0.0, 		true, 1.0);
 	cvar_active_bot_names_csgo_dev					= CreateConVar("active_bot_names_csgo_dev", 			"0", 					"Enable/Disable Bot Names Dev Mod", 	DEFAULT_FLAGS, 		true, 0.0, 		true, 1.0);
